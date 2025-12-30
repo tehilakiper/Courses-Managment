@@ -175,7 +175,7 @@ function prefomanceAcess(aId){
     sum += grade.grade;
   }
   avrg = sum/grdLng;
-    
+
   for(const grade of student.grades){
   if(grade.grade - avrg >= 20){
     is20High =true;
@@ -246,11 +246,12 @@ function studentRank(){
   });
   return arr;
 }
-
+  // help function
 function getAverage(student){ 
   let temp = prefomanceAcess(student.id);
   return temp.avareg;
 }
+//test
 console.log(studentRank());
 
 // Demand number 5
